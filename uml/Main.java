@@ -1,5 +1,3 @@
-package uml;
-
 import view.RegisterMenu;
 
 import java.util.Scanner;
