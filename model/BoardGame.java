@@ -4,23 +4,23 @@ import java.util.ArrayList;
 
 public class BoardGame {
     private User user;
-    private ArrayList<Card> siege = new ArrayList<>();
-    private ArrayList<Card> ranged = new ArrayList<>();
-    private ArrayList<Card> closeCombat = new ArrayList<>();
-    private ArrayList<Card> burnedCards = new ArrayList<>();
+    private final ArrayList<Card> siege = new ArrayList<>();
+    private final ArrayList<Card> ranged = new ArrayList<>();
+    private final ArrayList<Card> closeCombat = new ArrayList<>();
+    private final ArrayList<Card> burnedCards = new ArrayList<>();
     private ArrayList<Card> allCards = new ArrayList<>();
     private ArrayList<Card> cardsNotPlayed = new ArrayList<>();
-    private ArrayList<Integer> scoresEachRound = new ArrayList<>();
-    private int lives = 2;
-    private int round = 1;
+    private final ArrayList<Integer> scoresEachRound = new ArrayList<>();
+    private final int lives = 2;
+    private final int round = 1;
     private int siegeScore;
     private int rangedScore;
     private int closeCombatScore;
-    private int countVetoCard = 0;
-    private ArrayList<Card> cardsInHand = new ArrayList<>();
+    private final int countVetoCard = 0;
+    private final ArrayList<Card> cardsInHand = new ArrayList<>();
     private int totalScore;
     //TODO: leader card
-    private ArrayList<Card> spellCards = new ArrayList<>();
+    private final ArrayList<Card> spellCards = new ArrayList<>();
 
     public void setCardsNotPlayed(ArrayList<Card> cardsNotPlayed) {
         this.cardsNotPlayed = cardsNotPlayed;

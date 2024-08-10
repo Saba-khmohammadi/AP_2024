@@ -3,7 +3,7 @@ package model;
 import java.util.*;
 
 public class User {
-    private String username;
+    private final String username;
     private String nickname;
     private double record;
     private int totalGamesPlayed;
@@ -18,7 +18,7 @@ public class User {
     private String answerOfSecurityQuestion;
 
     private int numberOfSecurityQuestion;
-    private ArrayList<Card> deckCards = new ArrayList<>();
+    private final ArrayList<Card> deckCards = new ArrayList<>();
 
     public User(String username, String password) {
         this.username = username;

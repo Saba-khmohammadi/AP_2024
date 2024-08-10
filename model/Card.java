@@ -1,14 +1,14 @@
 package model;
 
 public class Card {
-    private String name;
-    private int power;
-    private int numberOfCardsInTheGame;
-    private String type;
-    private String abillity;
-    private String description;
-    private boolean isHero;
-    private String fraction;
+    private final String name;
+    private final int power;
+    private final int numberOfCardsInTheGame;
+    private final String type;
+    private final String abillity;
+    private final String description;
+    private final boolean isHero;
+    private final String fraction;
     public Card (String name, int power, int numberOfCardsInTheGame,
                  String type, String abillity, String description, boolean isHero, String fraction){
         this.name = name;
